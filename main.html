@@ -3,46 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shaw's News</title>
-  <link rel="stylesheet" href="style.css">
+  <title>News Page</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #011e29;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .latest-news-section {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .latest-news-section ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .latest-news-section li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .pictorial-news-section {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .pictorial-news-section img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <h1>Shaw's News</h1>
+  <header>
+    <h1>Daily News</h1>
   </header>
 
-  <main class="container">
-    <!-- Latest News Section -->
-    <section class="latest-news">
-      <h3>Latest News Articles</h3>
-      <ul>
-        <li>Article 1</li>
-        <li>Article 2</li>
-        <li>Article 3</li>
-      </ul>
-    </section>
+  <div class="latest-news-section">
+    <ul>
+      <li>News Item 1</li>
+      <li>News Item 2</li>
+      <li>News Item 3</li>
+    </ul>
+  </div>
 
-    <!-- Main Article Section -->
-    <section class="main-article">
-      <h2>Main Article</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Nulla facilisi. In vel tortor sed metus facilisis mattis. 
-        Donec sed fringilla mi. Nam ac libero non justo ornare convallis. 
-        Maecenas blandit fermentum lorem, vel consequat sem hendrerit a.
-      </p>
-    </section>
-
-    <!-- Pictorial News Section -->
-    <section class="pictorial-news">
-      <h3>Pictorial News</h3>
-      <div class="images">
-        <img src="image_one.jpg" alt="News 1">
-        <img src="image_two.jpg" alt="News 2">
-        <img src="image_three.jpg" alt="News 3">
-      </div>
-    </section>
-  </main>
+  <div class="pictorial-news-section">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News 1">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News 2">
+    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News 3">
+  </div>
 </body>
 </html>
+
 
